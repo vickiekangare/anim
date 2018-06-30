@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    tools:context=".PersonalDetailsActivity"
+    android:background="@drawable/stock">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#9fff"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginRight="2dp">
+
+            <TextView
+                android:id="@+id/tvLoanAmt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="I need loan of(in INR)" />
+
+            <EditText
+                android:id="@+id/tvAmt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number" />
+
+            <SeekBar
+                android:id="@+id/seekBar"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"/>
+
+            </LinearLayout>
+    <View style="@style/Divider"/>
+
+        <TextView
+            android:id="@+id/tvPeriod"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="For a period of(In months)" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="5dp">
+
+
+                <Button
+                    android:id="@+id/btn12"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/btn_style"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginTop="3dp"
+                    android:textColor="#000"
+                    android:text="12" />
+                <Button
+                    android:id="@+id/btn24"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginTop="3dp"
+                    android:textColor="#000"
+                    android:background="@drawable/btn_style"
+                    android:text="24" />
+                <Button
+                    android:id="@+id/btn36"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/btn_style"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginTop="3dp"
+                    android:textColor="#000"
+                    android:text="36" />
+                <Button
+                    android:id="@+id/btn48"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/btn_style"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginTop="3dp"
+                    android:textColor="#000"
+                    android:text="48" />
+
+            </LinearLayout>
+
+        <View style="@style/Divider"/>
+        <TextView
+            android:id="@+id/tvCurrently"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="I am currently" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp">
+
+            <Button
+                android:id="@+id/btnSallaried"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@drawable/btn_style"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginTop="3dp"
+                android:padding="5dp"
+                android:textColor="#000"
+                android:text="Sallaried" />
+
+            <Button
+                android:id="@+id/btnNonsallaried"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@drawable/btn_style"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="3dp"
+                android:textColor="#000"
+                android:padding="5dp"
+                android:text="Non Sallaried" />
+        </LinearLayout>
+    <View style="@style/Divider"/>
+
+
+
+        <TextView
+            android:id="@+id/tvWorking"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Working in" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp">
+
+            <Button
+                android:id="@+id/btnPrivate"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@drawable/btn_style"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="3dp"
+                android:textColor="#000"
+                android:padding="3dp"
+                android:text="Private sector" />
+
+            <Button
+                android:id="@+id/btnPublic"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@drawable/btn_style"
+                android:layout_marginRight="3dp"
+                android:layout_marginTop="3dp"
+                android:textColor="#000"
+                android:padding="3dp"
+                android:text="Public sector" />
+
+            <Button
+                android:id="@+id/btnGovernment"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@drawable/btn_style"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="3dp"
+                android:textColor="#000"
+                android:padding="3dp"
+                android:text="Goverment" />
+
+        </LinearLayout>
+    <View style="@style/Divider"/>
+
+
+
+
+
+        <TextView
+            android:id="@+id/tvmode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Mode of sallary pay" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp">
+
+            <Button
+                android:id="@+id/btnCheck"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@drawable/btn_style"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="3dp"
+                android:textColor="#000"
+                android:padding="5dp"
+                android:text="Check" />
+            <Button
+                android:id="@+id/btnBank"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@drawable/btn_style"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="3dp"
+                android:textColor="#000"
+                android:padding="3dp"
+                android:text="Bank Transfer" />
+            <Button
+                android:id="@+id/btnCash"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@drawable/btn_style"
+                android:layout_marginRight="3dp"
+                android:layout_marginTop="3dp"
+                android:textColor="#000"
+                android:padding="5dp"
+                android:text="Cash" />
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#9bbb65"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp">
+
+        <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="#ffff"
+        android:gravity="left"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:text="My Persnal Details" />
+
+
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="#9fff">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/textInput1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/etFname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:textColor="#000"
+                    android:textColorHint="@color/colorPrimary"
+                    android:hint="First Name" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/textInput2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/etLname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:textColor="#000"
+                    android:inputType="textPersonName"
+                    android:textColorHint="@color/colorAccent"
+                    android:hint="Last Name" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/textInput3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/etCompname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:textColor="#000"
+                    android:textColorHint="@color/colorAccent"
+                    android:inputType="textPersonName"
+                    android:hint="Company Name" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/textInput4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/etEmaiId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:textColor="#000"
+                    android:textColorHint="@color/colorPrimary"
+                    android:inputType="textPersonName"
+                    android:hint="Official Email ID" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <Spinner
+                android:id="@+id/spState"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:padding="5dp"
+                android:textColor="#000"
+                android:prompt="@string/state_prompt" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/textInput5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/etCity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:textColor="#000"
+                    android:textColorHint="@color/colorPrimary"
+                    android:inputType="textPersonName"
+                    android:hint="Enter Your City" />
+            </android.support.design.widget.TextInputLayout>
+
+
+    </LinearLayout>
+        <Button
+            android:id="@+id/btnLogIn"
+            style="@style/btnStyle"
+            android:layout_width="160dp"
+            android:layout_gravity="center"
+            android:background="@drawable/btn_back_style"
+            android:layout_marginBottom="20dp"
+            android:elevation="5dp"
+            android:onClick="next"
+            android:text="Next" />
+
+    </LinearLayout>
+
+</ScrollView>

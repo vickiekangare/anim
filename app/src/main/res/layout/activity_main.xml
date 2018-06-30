@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/stock">
+
+        <include
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            layout="@layout/toolbar"/>
+
+        <LinearLayout
+            android:id="@+id/lLone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="#9fff">
+
+
+
+            <EditText
+                android:id="@+id/etMobileno"
+                android:layout_width="320dp"
+                android:layout_height="60dp"
+                android:textSize="20sp"
+                android:ems="10"
+                android:background="#F2F3F4"
+                android:layout_marginBottom="30dp"
+                style="@style/etStyle"
+                android:maxLength="10"
+                android:hint="Enter Mobile No"
+                android:inputType="number" />
+
+            <Button
+                android:id="@+id/btnLogIn"
+                style="@style/btnStyle"
+                android:layout_gravity="center"
+                android:background="@drawable/btn_back_style"
+                android:onClick="login"
+                android:elevation="6dp"
+                android:text="Login/Sign Up" />
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <android.support.design.widget.NavigationView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/navigationView"
+        android:layout_gravity="start"
+        android:background="@color/colorPrimaryDark"
+        app:menu="@menu/drawer_menu"
+        app:headerLayout="@layout/navigation_drawer_header">
+
+    </android.support.design.widget.NavigationView>
+
+
+</android.support.v4.widget.DrawerLayout>
